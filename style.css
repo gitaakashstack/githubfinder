@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+.topbar{
+    background-color: rgb(94, 96, 226);
+    padding:20px;
+    font-size: 1.5rem;
+    color:white;
+}
+.topbar>span{
+    margin-left: 13%;
+
+}
+.warning{
+    width:70%;
+    margin:10px auto;
+    background-color: crimson;
+    color:white;
+    padding:10px;
+    display: none;
+}
+div.searchbox{
+    border: 1px solid rgb(208, 208, 216);
+    margin:20px auto;
+    width:70%;
+    display: flex;
+    flex-direction: column;
+}
+div.searchbox>*{
+    margin:10px;
+}
+input{
+    padding:10px 5px;
+    border: 1px solid rgb(208, 208, 216);
+    border-radius: 5px;
+    
+    transition: box-shadow 0.1s;
+}
+input:focus{
+    box-shadow:2px 2px 2px rgb(113, 181, 236),-2px -2px 2px rgb(113, 181, 236);
+    outline: none;
+}
+.profilegist{
+    width:70%;
+    margin:10px auto;
+    display:flex;
+    justify-content: space-between;
+    border: 1px solid rgb(208, 208, 216);
+    height:320px;
+}
+.profilegist>div:nth-child(1){
+    width:23%;
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+}
+.profilegist>div:nth-child(1)>img{
+
+    margin-bottom: 5px;
+}
+.profilegist>div:nth-child(1)>p{
+    background-color: rgb(138, 139, 236);
+    margin:auto 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.profilegist>div:nth-child(1)>p:hover{
+    background-color: rgb(122, 124, 236);
+}
+a{
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+}
+.profilegist>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    width: 77%;
+    margin:20px;
+}
+ul{
+    list-style-type: none;
+}
+.profilegist>div>ul:first-child{
+    display: flex;
+    margin-bottom: 20px;
+}
+.profilegist>div>ul:first-child>li{
+    padding: 10px;
+    border-radius: 5px;
+    color:white;
+}
+.profilegist>div>ul:first-child>li:not(:first-child):not(:last-child){
+    margin:0 3px;
+}
+.profilegist>div>ul:first-child>li:nth-child(1){
+    background-color: rgb(94, 96, 226);
+}
+.profilegist>div>ul:first-child>li:nth-child(2){
+    background-color: rgb(168, 168, 177);
+}
+.profilegist>div>ul:first-child>li:nth-child(3){
+    background-color: rgb(54, 230, 121);
+}
+.profilegist>div>ul:first-child>li:nth-child(4){
+    background-color: rgb(53, 131, 131);
+}
+.profilegist>div>ul:last-child{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    border: 1px solid rgb(208, 208, 216);
+}
+.profilegist>div>ul:last-child>li:not(:last-child){
+    border-bottom: 1px solid rgb(208, 208, 216);
+
+}
+.profilegist>div>ul:last-child>li{
+    padding:10px;
+}
+.allrepos{
+    border: 1px solid rgb(208, 208, 216);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:20px 0;
+    width:70%;
+    margin:10px auto;
+}
+.allrepos>ul{
+    display: flex;
+    color:white;
+    margin-right:40px;
+}
+.allrepos>p{
+    margin-left:10px;
+    width:30%;
+}
+.allrepos>p>a{
+    color:blue;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.allrepos>ul>li{
+    padding:7px;
+    margin:0 5px;
+    border-radius: 4px;
+}
+.allrepos>ul>li:nth-child(1){
+    background-color: rgb(113, 181, 236);
+}
+.allrepos>ul>li:nth-child(2){
+    background-color: rgb(74, 238, 123);
+}
+.allrepos>ul>li:nth-child(3){
+    background-color: rgb(218, 150, 231);
+}
+h2{
+    width:70%;
+    margin:10px auto;
+}
+@media(max-width:768px){
+    
+    .profilegist{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-evenly;
+        height:auto;
+    }
+    .profilegist>div:nth-child(1){
+        margin:20px auto 0 auto;
+        width:90%;
+    }
+    .profilegist>div:nth-child(1)>p{
+        width: 100%;
+    }
+    .profilegist>div:nth-child(2){
+        width:90%;
+        margin:20px auto 0 auto;
+
+    }
+    .profilegist>div>ul:first-child{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .profilegist>div>ul:first-child>li{
+        margin:10px;
+    }
+    .allrepos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .allrepos>ul{
+       justify-content: space-evenly;
+       margin:0;
+       width:100%;
+    }
+    .allrepos>p{
+        width: 100%; 
+        margin: 0;
+    }
+
+}
